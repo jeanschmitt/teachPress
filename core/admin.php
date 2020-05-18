@@ -786,6 +786,7 @@ function tp_add_publication_as_post ($title, $bibtex_key, $date, $post_type = 'p
       'post_type' => $post_type,
       'post_status' => 'publish',
       'post_category' => $category,
+      'meta_input' => array( 'tp_publication_key' => $bibtex_key ),
       ));
     return $post_id;
 }
